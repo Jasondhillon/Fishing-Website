@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Jason Dhillon
+		 1/23/17
+		 Test site for learning -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../css/blog.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div>
+	<noscript id="deferred-styles">
+      	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    </noscript>
+
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+</div>
+
+<!-- NavBar -->
+<div class="header">
+		<nav>
+			<input class="nav_button" type="image" src="../img/menu.png" width="25px" height="20px"/>
+			<ul class="header">
+				<li class="logo">
+					<img src="../img/logo.png"/></li>
+				<li class="header"><a class="header" href="../index.html">Home Page</a></li> 
+				<li class="header"><a class="header" href="../fishingreports/index.html">Fishing Reports</a></li>
+				<li class="header"><a class="header" href="../rates/index.html">Rates/Location</a></li>
+				<li class="header"><a class="header" href="../photogallery/index.html">Photo Gallery</a></li>
+				<li class="header"><a class="header" href="../testamonials/index.html">Testimonials</a></li>
+			</ul>
+		</nav>
+</div>
+
+<!-- Blog -->
+<div style="margin: 150px auto 0 auto; width: 90%; max-width: 900px;">
+
+			<div class="testamonial_wrapper">
+				<img src="../img/test1.jpg" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Hey Tom,
+					<br><br>
+					Thanks again for the fishing trip 2/11/13. I must admit, I was skeptical at first, but you proved me 100% wrong. Me and the kids had a fantastic time, beyond our expectations.  Some of our friends didn’t even believe the photos of our catch were real.  I had to show them the video to prove it! Also, if you create a mailing list, please add me on.
+					<br><br>
+					Regards,</p>
+					<h3 class="author">Brian</h3>
+					<h4 class="author">November 2013</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/profile.png" style="float:left;" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Tom, 
+					<br><br>
+					Just wanted to let you know a lot of your customer's stop by the store after a day on the water with you. I've never heard so many people enjoy guide fishing like they do with you. They say it's like fishing with an old friend. We here Murrays bait and tackle look forward to helping you in any way to make your customer satisfied. Now stop reading this email and go fishing.</p>
+					<h3 class="author">James Allen</h3>
+					<h4 class="author">March 2013</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/profile.png" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Hi Capt. Tom,
+					<br><br>
+					I just wanted to tell you Montana and I really enjoyed our selfs today thank you very much and you'll be hearing from us again. 
+					<br><br>
+					Thanks,</p>
+					<h3 class="author">Thelbert and Montana</h3>
+					<h4 class="author">January 6th 2012</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/profile.png" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Hi Tom,
+					<br><br>
+					I just wanted to thank you for the fishing charter that you gave my father and I this previous week. It was an experience that we both will never forget. You took the time to teach us and made our trip extremely enjoyable. I was really excited that you took the extra effort to help us locate the fish and put us on them. We had a blast and will use your services over and over again when we visit our Florida office. Thanks again for the great experience and the chance to have you as a friend! I would recommend you to any person seeking charting services.</p> 
+					<h3 class="author">Jason and James</h3>
+					<h4 class="author">June 2011</h4>
+				</div>
+			</div>
+			
+			<div class="testamonial_wrapper">
+				<img src="../img/profile.png" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Tom,
+					<br><br>
+					Thanks for everything!
+					<br><br>
+					Gavin had the time of his life. 
+					<br><br>
+					I was so grateful to you that the trip was all about him. We will definitely be back !</p>
+					<h3 class="author">Cary and Gavin</h3>
+					<h4 class="author">April 2011</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/profile.png" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Tom, Here is the picture of the Black Drum.
+					<br><br>
+					Jordan and I had a great time on the charter.
+					<br><br>
+					Thanks,</p>
+					<h3 class="author">Steve Cannons</h3>
+					<h4 class="author">March 2011</h4>
+				</div>
+			</div>
+			
+			<div class="testamonial_wrapper">
+				<img src="../img/profile.png" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Hi Tom, 
+					<br><br>
+					just wanted to thank you for a nice day on the water on our trip. Cameron and i really enjoyed ourselves fishing with you we hope to get back down sometime soon and do it again. 
+					<br><br>
+					Please e-mail me the picture of Cameron with the trout i would really appreciate that.
+					<br><br>
+					Thanks again</p>
+					<h3 class="author">Frank</h3>
+					<h4 class="author">March 2011</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/profile.png" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Thanks again for the great fishing experience.  Even with less than ideal weather/water conditions, you still got us onto big fish.
+					<br><br>
+					To see the large schools of Black Drum on the flats is a memory that will last a lifetime.  Seeing the dolphins, manatee and variety of bird species while fishing was a huge bonus.  Fishing with you was like fishing with a great buddy.  You will definitely see us again for another fishing adventure.</p>
+					<h3 class="author">Paul and Kelly</h3>
+					<h4 class="author">January 2011</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/test13.jpg" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Hi Tom,
+					<br><br>
+					just a quick note before flying home to thank you for two great trips out after the redfish, even if the weather was a bit chilly! Thanks for your company and taking me to your office (the best in the world) I will definitely call you as soon as I return to Florida.
+					<br><br>
+					Kindest regards,</p>
+					<h3 class="author">Andy Klien</h3>
+					<h4 class="author">January 2011</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/test12.jpg" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Thanks for today... we had a lot of fun. Take care I'll send you some pic's of Glenn's fish.</p>
+					<h3 class="author">Glenn Richard</h3>
+					<h4 class="author">December 2010</h4>
+				</div>
+			</div>
+			
+			<div class="testamonial_wrapper">
+				<img src="../img/test11.jpg" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Hey Tom,
+					<br><br>
+					Thanks for the great day out on the water, I can't remember the last time I had such a great time. The fishing was great and my dad and I had a blast, we're already talking about when we want to come down next. Here our some of the pictures that we took of the fish. Thanks again, and we hope to see you soon!</p>
+					<h3 class="author">Craig Rosgen</h3>
+					<h4 class="author">December 2010</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/test3.jpg" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Thank You Tom!!!
+					<br><br>
+					That was the best day of fly fishing for reds I have ever had. I was happy with the first big red on fly but then we topped it with an even bigger redfish. You showed great patience until we found the right fly and it was truly the fishing trip of a life time! I do not expect to top that fishing trip but I look forward to trying next year in 2011.
+					<br><br>
+					Thanks Again,</p>
+					<h3 class="author">Scott Hasson</h3>
+					<h4 class="author">November 2010</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/test10.jpg" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Capt. Tom,
+					<br><br>
+					Thanks again for creating a memorable day for me and my son, Danny. You are a great Captain and I felt like we made a friend in the flats of life.We will be spreading the word to our family and friends about using this adventure for a gift. It sure beats the crowds.</p>
+					<h3 class="author">Dan the man with the plan.</h3> 
+					<h4 class="author">October 2010</h4>
+				</div>
+			</div>
+			
+			<div class="testamonial_wrapper">
+				<img src="../img/test9.jpg" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Dear Capt. Tom,
+					<br><br>
+					We had a marvelous time on our trip with you on 10-10-10.It was a great adventure.Your company was great and expertise was the mark of a true sportsman.Kevin and I had a wonderful time, because it was my first fishing experience, thanks for making it a great one! We will definitely see you again.
+					<br><br>
+					Best regards,</p>
+					<h3 class="author">Minda Stevens</h3>
+					<h4 class="author">October 2010</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/profile.png" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Dear Cap'n Carver,
+					<br><br>
+					Way back in October of 2010 you treated my new bride, Minda, and I to a awesome day of fishing. Our  catch was  a Redfish each  you helped introduce her to fishing in a very exciting and humane manner. I know you've had many guests since our trip but perhaps the attached pics will jog your memory. We'd like to come back and try again, this time adding a friend. As was the case with Minda this will be an introductory flats fishing trip for him. He is a good guy and will be a pleasure to take on board.At this point I'm hoping to get an idea of how the action might be in mid-January. Our friend is fairly flexible as to date and, like us, he is located here in FL.  I'm also curious how long your $119.00 per person special runs. It is a great deal and I'd like to take advantage of it. Given that it has a limited life I assume I could book a trip for three now and then set the actual date sometime in the future.</p>
+					<h3 class="author">Kevin Donahue</h3>
+					<h4 class="author">October 2010</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/test8.jpg" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Tom,
+					<br><br>	
+					Thanks for for the great day on the water!!
+					<br><br>
+					My son and I had an awesome time and will definitely hook up with you again on our next trip to Florida.
+					<br><br>
+					THANKS,</p>
+					<h3 class="author">Vinny</h3>
+					<h4 class="author">April 2010</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/test5.jpg" style="float:left" 	width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Capt. Tom,
+					<br><br>
+					James Here,
+					<br><br>
+					Thanks for putting me on the Snook today it was great. Let me know when the bites on again so I can book another trip out with you. Can’t wait to hook up on a big Redfish with my step son Clint.</p>
+					<br><br>
+					<h3 class="author">James Leger</h3>
+					<h4 class="author">September 2009</h4>
+				</div>
+			</div>
+			
+			<div class="testamonial_wrapper">
+				<img src="../img/test7.jpg" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Hey Tom,
+					<br><br>
+					Thanks for getting us on the Redfish on a windy and rainy day, you still found them for us even though the odds were stacked against us.
+					<br><br>
+					THANK YOU</p>
+					<h3 class="author">David Trujillo</h3>
+					<h4 class="author">March 2009</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/test6.jpg" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Captain Tom,
+					<br><br>
+					It’s Mike from the Ring-power Corp.
+					<br><br>	
+					The tournament you put on for us went on with out a hitch. My boss Pat and I had an awesome day catching those big Reds and he is now hooked. He asked for your info and is looking to book another trip with his son next month so expect a call from him soon. 
+					<br><br>
+					Thanks again,</p>
+					<h3 class="author">Mike Beauregard</h3>
+					<h4 class="author">August 2007</h4>
+				</div>
+			</div>
+			
+			<div class="testamonial_wrapper">
+				<img src="../img/test4.jpg" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Hey Tom,
+					<br><br>
+					This is Rusty
+					<br><br>
+					I would like to again thank you for the trip and hopefully I’ll be able to come down there and do it again some time soon.</p>
+					<br><br>
+					<h3 class="author">Rusty Nickels</h3>
+					<h4 class="author">January 2007</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/test2.jpg" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Tom,
+					<br><br>
+					Thanks again for a great fishing trip a few weeks back. Here are some of the photos of my first redfish. It was great going out with a guide 
+					<br><br>
+					who makes you feel like you are just going fishing with friends. My wife and I really enjoyed it. We'll see you again soon.</p>
+					<p>Thanks,</p>
+					<br><br>
+					<h3 class="author">Dr. Doug and Andrea Childs</h3>
+					<h4 class="author">April 2006</h4>
+				</div>
+			</div>
+			
+			<div class="testamonial_wrapper">
+				<img src="../img/profile.png" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Hey Tom,
+					<br><br>
+					Thanks again for a very enjoyable morning on the water-great break for me from the Disney/Universal madness. I felt like I was fishing with a very knowledgeable buddy instead of a hired guide. It was great how you knew there was a big fish in the area before we even saw it. That's what time on the water gets you
+					<br><br>
+					Again - great job Tom - hope we can hook up again. </p>
+					<br><br>
+					<h3 class="author">Kevin Moore</h3>
+					<h4 class="author">December 2005</h4>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/profile.png" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+					<p class="testamonial">Tom,
+					<br><br>
+					Thanks for a great day.</p>
+					<h3 class="author">Pastor David</h3>
+				</div>
+			</div>
+
+			<div class="testamonial_wrapper">
+				<img src="../img/profile.png" style="float:left" width="60px" height="60px">
+				<div style="margin-left:80px">
+				<p class="testamonial">Hey Tom,
+					<br><br>
+					Hey Tom, Corrine and I had a great time and we will be back very soon to fill up our cooler. It was very nice to meet and talk with you, thanks again.</p>
+					<h3 class="author">Dan Wright</h3>
+				</div>
+			</div>
+
+</div>
+<
+<!-- Contact Form -->
+<div style="padding-top: 50px; background-color: #f7faff;">
+	<h4 style="text-align: center;">I'D LOVE TO HEAR FROM YOU</h4>
+	<h1 style="letter-spacing: 3px">CONTACT ME ANY TIME</h1>
+	<br>
+	<h4 style="text-align: center;">Lets Go Fishing!</h4>
+	<br><br><br>
+
+	<table>
+		<tr>
+			<td>
+				<form id="contactme" action="../mail.php" method="post" target="sent">
+					
+					<input type="hidden" name="token" value="<?php echo $_SESSION['token'] ?>" />
+
+					<label for="name">NAME</label>
+					<input id="name" type="text" required name="name">
+
+					<label for="people">NUMBER OF PEOPLE</label>
+					<input id="people" type="text" required name="people">
+
+					<label for="email">YOUR EMAIL</label>
+					<input id="email" type="text" required name="email">
+
+					<label for="phone">YOUR PHONE</label>
+					<input id="phone" type="text" required name="phone">
+
+					<label for="subject">SUBJECT</label>
+					<input id="subject" type="text" required name="subject">
+			
+					<br>
+					<label for="message">YOUR MESSAGE</label>
+					<textarea id="message" name="message" cols="25" rows="5" required></textarea>
+					<br>
+					<input type="button" id="btnsubmit" value="Submit" onclick="submitForm()">
+					<br><br><br>
+				</form>
+
+				<script>
+					function submitForm() {
+						var frm = document.getElementById('contactme');
+						frm.submit(); // Submit
+						frm.reset();  // Reset
+						return true;
+					}
+				</script>
+
+				<iframe class="sent" name="sent" frameborder="0" border="0" cellspacing="0" ></iframe>
+
+				
+			</td>
+
+			<td id="contact_pc">
+				<div>
+					<h1 style="text-align: unset">Hours of Operation:</h1>
+					<h4>Monday through Sunday open 6am to 10pm</h4>
+					<br><br><br><br>
+					<h1 style="text-align: unset">Business Information:</h1>
+					<h4><img id="icon" src="../img/location.png">1103 Garden ST. Titusville FL, 32796</h4>
+					<h4><img id="icon" src="../img/phone.png">1-407-432-5138</h4>
+					<h4><img id="icon" src="../img/mail.png"><a style="text-decoration: underline; color:dodgerblue" href="mailto:flataddicted@gmail.com">flataddicted@gmail.com</a></h4>
+				</div>
+			</td>
+		</tr>
+
+	</table>
+</div>
+
+<!-- Footer -->
+<footer>
+
+	<table style="width: 100%; table-layout: fixed" cellspacing="0" cellpadding="0">
+
+		<tr>
+			<td>
+				<p class="footer">THE SOCIAL THING</p>
+				<ul class="footer">
+					<li><a href="https://www.facebook.com/Flataddicted"> <img src="../img/facebook.svg" alt="" width="50px" height="50px"></li>
+					<li><a href="https://twitter.com/flataddicted"> <img src="../img/twitter.svg" alt="" width="50px" height="50px"></li>
+					<li><a href="https://plus.google.com/+TomCarver"> <img src="../img/googleplus.svg" alt="" width="50px" height="50px"></li>
+					<li><a href="https://www.instagram.com/flataddicted/"> <img src="../img/instagram.svg" alt="" width="50px" height="50px"></li>
+					<li><a href="https://www.youtube.com/channel/UCXz5g_fsJJOgfADpsXqn34Q"> <img src="../img/youtube.svg" alt="" width="50px" height="50px"></li>
+				</ul>
+			</td>
+
+				
+			<td id="normalblog"style="padding-right: 100px; padding-top:50px; float: right;">
+					<h4>Monday through Sunday open 6am to 10pm</h4>
+					<h4><img id="icon" src="../img/location2.png">1103 Garden ST. Titusville FL, 32796</h4>
+					<h4><img id="icon" src="../img/phone2.png">1-407-432-5138</h4>
+					<h4><img id="icon" src="../img/mail2.png"><a style="text-decoration: underline; color:dodgerblue" href="mailto:flataddicted@gmail.com">flataddicted@gmail.com</a></h4>
+			</td>
+		</tr>
+
+		<tr>
+			<td id="mobileblog">
+				<ul class="contact">
+					<li class="footer"><h4>Monday through Sunday open 6am to 10pm</h4></li>
+					<li class="footer"><h4><img id="icon" src="../img/location2.png">1103 Garden ST. Titusville FL, 32796</h4></li>
+					<li class="footer"><h4><img id="icon" src="../img/phone2.png">1-407-432-5138</h4></li>
+					<li class="footer"><h4><img id="icon" src="../img/mail2.png">
+						<a style="text-decoration: underline;
+					 	color:dodgerblue" href="mailto:flataddicted@gmail.com">
+						 flataddicted@gmail.com</a></h4></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+</footer>
+
+</body>
+</html>

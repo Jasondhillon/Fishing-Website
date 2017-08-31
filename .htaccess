@@ -1,0 +1,5 @@
+# HTID:258198: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:258198:
+Header set Cache-Control "max-age=604800, public"
+AddType application/x-httpd-php .htm .html

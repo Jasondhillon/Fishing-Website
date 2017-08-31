@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:block; position: absolute;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.test{position: relative}
+</style>
+<body>
+
+<div class="w3-container">
+  <h2 onclick="showDivs(0)">Slideshow Indicators</h2>
+  <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+</div>
+
+<div class="w3-content w3-display-container" style="max-width:800px; height:280px">
+  <img class="mySlides" src="img_nature_wide.jpg" style="width:800px; z-Index:3">
+  <img class="mySlides" src="img_fjords_wide.jpg" style="width:800px; z-Index:2">
+  <img class="mySlides" src="img_mountains_wide.jpg" style="width:800px; z-Index:1">
+
+  
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%; z-index:4;">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 0;
+var j = null;
+document.getElementsByClassName("demo")[slideIndex].className += " w3-white";
+//var looper = setInterval(function(){showDivs(slideIndex += 1)}, 5000);
+
+function plusDivs(n) {
+  //clearInterval(looper);
+  if(j!==null){
+     
+  }else{  
+  showNextDivs(n+slideIndex);
+  }
+}
+
+function currentDiv(n) {
+  if(j!==null){
+     
+  }else{
+  //clearInterval(looper);  
+  showDivs(n);
+  }
+}
+
+
+//////////////////////////////////////////////////////
+function showDivs(n) {
+  var prev = slideIndex;
+  var next = n-1;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+
+  x[prev].style.zIndex = 3;
+
+  x[next].style.zIndex = 2;
+
+  for(var i = 0; i<x.length; i++){
+    if((i!== prev) && (i!==next)){
+      x[i].style.zIndex = 1;
+    }
+    
+  }
+    var opc = 1;
+    j = setInterval(function(){
+        if (opc <= 0) {
+          x[next].style.zIndex = 3;
+          x[prev].style.zIndex = 2;
+          x[prev].style.opacity = 1;
+            clearInterval(j);
+            j=null;
+        } else {
+            opc-=.01;
+
+            x[prev].style.opacity = opc;
+        }
+    }, 10);
+
+    slideIndex = next;
+ 
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+
+  dots[next].className += " w3-white";
+  x[prev].style.opacity = 1;
+}
+
+
+////////////////////////////////////////////////////
+function showNextDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+
+  var prev = slideIndex;
+  var next = n;
+  if (n == -1) {next = 2}
+  if (n == 3) {next = 0}
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+
+  x[prev].style.zIndex = 3;
+
+  x[next].style.zIndex = 2;
+
+  for(var i = 0; i<x.length; i++){
+    if((i!== prev) && (i!==next)){
+      x[i].style.zIndex = 1;
+    }
+    
+  }
+    var opc = 1;
+    j = setInterval(function(){
+        if (opc <= 0) {
+          x[next].style.zIndex = 3;
+          x[prev].style.zIndex = 2;
+          x[prev].style.opacity = 1;
+            clearInterval(j);
+            j=null;
+        } else {
+            opc-=.01;
+
+            x[prev].style.opacity = opc;
+        }
+    }, 10);
+
+    slideIndex = next;
+ 
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+
+  dots[next].className += " w3-white";
+  x[prev].style.opacity = 1;
+
+  console.log("Previous: " + prev + "\nslideIndex: " + slideIndex)
+}
+
+  
+
+</script>
+
+</body>
+</html> 
