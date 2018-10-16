@@ -1,6 +1,6 @@
 # Fishing Website Prototype
 <ul>
-  <li>Author: shotgunsam419</li>
+  <li>Author: Jason Dhillon</li>
   <li>Recreation of site from client's current wordpress generated site</li>
 </ul>
 
