@@ -11,7 +11,7 @@
 	
 <noscript id="deferred-styles">
       	<link href="https://fonts.googleapis.com/css?family=Oswald|Ubuntu" rel="stylesheet">
-		<!--<link href="../css/home.css" rel="stylesheet" type="text/css">-->
+		<link href="../css/home.css" rel="stylesheet" type="text/css">
     </noscript>
     <script>
       var loadDeferredStyles = function() {
@@ -51,20 +51,25 @@
 </script>
 
 <!-- NavBar -->
-<div class="header">
-		<nav>
-			<input class="nav_button" type="image" src="../img/menu.png" width="25px" height="20px"/>
-			<ul class="header">
-				<li class="logo">
-					<img src="../img/logo.png"/></li>
-				<li class="header"><a class="header" href="../index.html">Home Page</a></li> 
-				<li class="header"><a class="header" href="../fishingreports/index.html">Fishing Reports</a></li>
-				<li class="header"><a class="header" href="index.html">Rates/Location</a></li>
-				<li class="header"><a class="header" href="../photogallery/index.html">Photo Gallery</a></li>
-				<li class="header"><a class="header" href="../testamonials/index.html">Testimonials</a></li>
-			</ul>
-		</nav>
-</div>
+	<nav class="topnav" id="myTopnav">
+		<a style="padding: 14px 16px;" href="../index.html"><img src="../img/logo.png"/></a>
+		<a href="../fishingreports/index.html">Fishing Reports</a>
+		<a href="../rates/index.html">Rates</a>
+		<a href="../photogallery/index.html">Photo Gallery</a>
+		<a href="../testamonials/index.html">Testimonials</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</nav>
+	  
+	  <script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
 
 <!-- Prices -->
 <div style=" margin: 100px auto 0px auto; width: 90%; max-width: 800px; overflow:hidden;" align="center">
