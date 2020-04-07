@@ -6,10 +6,6 @@
 		overflow-x: hidden;
     }
 
-    hr{
-        width: 100%;
-    }
-
 	html{
 		overflow-x: hidden;
 	}
@@ -50,6 +46,10 @@
 	li{
 		display: inline-block;
 	}
+
+    hr{
+        width: 90%;
+    }
 
 /* Navbar */
 .topnav {

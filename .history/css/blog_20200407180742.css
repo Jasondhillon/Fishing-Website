@@ -51,6 +51,10 @@
 		display: inline-block;
 	}
 
+    hr{
+        width: 90%;
+    }
+
 /* Navbar */
 .topnav {
     overflow: hidden;
